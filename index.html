@@ -162,7 +162,32 @@ header{
 {animation-delay: 0.6s;}
 .equalizer span:nth-child(5)
 {animation-delay: 0.8s;}
-    
+    .hero{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-cotent {
+ background: rgba(0, 0, 0, 0.6);
+ padding: 40px;
+ border-radius: 15px;
+ backdrop-filter: blur(10px);
+    }
+    .hero h2 {
+        font-size: 48px;
+        margin-bottom: 10px;
+        text-shadow: 0 0 15px cyan;
+    }
+
+    .buttons {
+        margin-top: 20px;
+    }
+    .btn {
+        margin: 10px;
+        padding: 12px 25px;
+        font-size: 16px;
+    }
  
 </style>
 </head>
@@ -180,6 +205,15 @@ header{
 <img src="c:\Users\ADMIN\OneDrive\COMPUTER SCIENCE\yourmusic.mp3\dj zubic log.jpg">
 
 <section class="hero">
+    <div class="hero-cotent">
+        <h2>DJ ZUBIC MAL</h2>
+        <p id="typing"></p>
+
+    <div class="buttons">
+        <a href="#tracks"><button class="btn">Listen Now</button></a>
+        <a href="#contact"><button class="btn">Book Me</button></a>
+    </div>
+    </div>
     <h2><i>Stream My Latest Mixes</i></h2>
  <P><b>Official website of DJ ZUBIC MAL</b></P>
  <p id="typing"></p>
@@ -245,7 +279,7 @@ text-align: center;"
     <h3>Book / Contact Me</h3>
     <p>Email: djzubicmal@gmail.com</p>
     <p>Phone: +256 784189990</p>
-    <p> © 2026 DJ ZUBIC MAL | All Rights Reserved</p>
+    <p> 2026 DJ ZUBIC MAL | ALL Rights Reserved</p>
 </footer>
 <script>
     const text ="Afrobeats . Club . Party . Vibes";
