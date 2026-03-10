@@ -12,6 +12,7 @@
         margin-top: 20px; 
     } 
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/a jax/libs/front-awesome/6.5.0/css/all.min.css">
     <style>
 body {
     margin: 0;
@@ -20,11 +21,13 @@ text-align:center;
 font-family:Arial,sans-serif;
 
 
-background: url("dj\ zubic\ log.jpg");
+background: blue;
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
 }
+
+
 body::before{
     content: "";
     position: fixed;
@@ -69,25 +72,41 @@ button {
     border:none;
     font-size:16px;
 }
+/*header*/
 header{
-    background: black;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background:url("dj\ zubic\ log.jpg");
+    padding: 80px 20px;
+    background-size: cover;
+    background-position: center;
 }
     header h1 {
         color:cyan;
         text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan;
+        font-size: 40px;
     }
+    /*section*/
+    section{padding: 40px 20px;}
+    /*audio*/
+    audio{width: 90%;margin: 10px;}
+    /*gallery*/
+    .gallery img{width: 250px;margin: 10px;border-radius: 10px;}
+    /*social icons*/
+    .social a{font-size: 30px;margin: 15px;color: white;}
+    .social a:hover{color: #ff0050;}
+
+    /*whatsapp button*/
+    .whatsapp{position: fixed;bottom: 20px;right: 20px;background: #25D366;color: white;width: 60px;height: 60px;border-radius: 50%;text-align: center;line-height: 60px;font-size: 30px;}
+    footer{background: #111;padding: 20px;}
+    /*navigation*/
+    nav a{background: #111;padding: 15px;}
     nav a{
         color: white;
-        margin-left: 20px;
+        margin-left: 15px;
         text-decoration: none;
         font-weight: bold;
     }
     nav a:hover{
-        color: cyan;
+        color: #ff0050;
     }
     .hero{
         padding: 50px;
@@ -194,11 +213,13 @@ header{
 <body>
     <header>
 <h1><b> DJ ZUBIC MAL</b></h1>
+<p>Official Music Stream Website</p>
 <nav>
     <a href="#">Home</a>
     <a href="#music">Music</a>
     <a href="#tracks">Tracks</a>
     <a href="#contact">Contact</a>
+    <a href="#gallery">Gallery</a>
 </nav>
 </header>
 
@@ -214,8 +235,8 @@ header{
         <a href="#contact"><button class="btn">Book Me</button></a>
     </div>
     </div>
-    <h2><i>Stream My Latest Mixes</i></h2>
- <P><b>Official website of DJ ZUBIC MAL</b></P>
+    <h4><i>Stream My Latest Mixes</i></h4>
+ <P>Official website of DJ ZUBIC MAL</P>
  <p id="typing"></p>
  <div class="equalizer">
     <span></span>
@@ -272,15 +293,27 @@ header{
 style="padding: 30px;
 text-align: center;"
 >
+<section id="gallery"> <h2>Gallery</h2> <div class="gallery"> 
+    <img src="dj\ zubic\ log.jpg">
+</div>
+</section>
+
+</section>
+<section id="contact"> <h3>Book / Contact Me</h3>
+    <p>Email: djzubicmal@gmail.com</p>
+    <p>Phone: +256 784189990</p>
+<div class="social">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-tiktok"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+</div>
 </section>
 
 <footer>
     
-    <h3>Book / Contact Me</h3>
-    <p>Email: djzubicmal@gmail.com</p>
-    <p>Phone: +256 784189990</p>
     <p> 2026 DJ ZUBIC MAL | ALL Rights Reserved</p>
 </footer>
+
 <script>
     const text ="Afrobeats . Club . Party . Vibes";
     let index = 0;
@@ -297,6 +330,6 @@ text-align: center;"
 
 </script>
  
-
+<a href="https://wa.me/256784189990" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
 </body>
 </html>
